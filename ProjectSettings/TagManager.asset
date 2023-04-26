@@ -8,6 +8,10 @@ TagManager:
   - 2
   - 3
   - 4
+  - Tray1
+  - Tray2
+  - Tray3
+  - Tray4
   layers:
   - Default
   - TransparentFX
