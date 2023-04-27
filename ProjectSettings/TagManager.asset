@@ -12,6 +12,7 @@ TagManager:
   - Tray2
   - Tray3
   - Tray4
+  - Head
   layers:
   - Default
   - TransparentFX
