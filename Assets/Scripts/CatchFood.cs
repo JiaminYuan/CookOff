@@ -25,8 +25,9 @@ public class CatchFood : MonoBehaviour
     {
         if (obj.gameObject.tag == ("Player"))
         {
-            tray.transform.SetParent(player.transform);
-            tray.transform.localPosition = player.transform.InverseTransformPoint(player.transform.position + Vector3.up * headOffset);
+            Debug.Log(player);
+            tray.transform.parent = (obj.gameObject.transform);
+            //tray.transform.localPosition = player.transform.position + Vector3.up * headOffset;
             rb.isKinematic = true;
             Debug.Log("Food caught");
         }
