@@ -7,12 +7,11 @@ public class ServeFood : MonoBehaviour
 
     public GameObject table;
     public GameObject tray;
-    private float headOffset = 1f;
-  //  Rigidbody rb;
+    private float headOffset = 4f;
     // Start is called before the first frame update
     void Start()
     {
-       // rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -27,7 +26,6 @@ public class ServeFood : MonoBehaviour
         {
             tray.transform.parent = (table.gameObject.transform);
             tray.transform.localPosition = table.transform.position + Vector3.up * headOffset;
-           // rb.isKinematic = true;
             Debug.Log("Food served");
         }
     }
