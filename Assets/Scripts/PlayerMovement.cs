@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 turn;
 
     public Animator ac;
+    public GameObject tray;
     private float walkSpeed = 5;
     private float runSpeed = 8; 
     private float charSpeed; 

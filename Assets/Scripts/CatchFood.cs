@@ -6,13 +6,15 @@ public class CatchFood : MonoBehaviour
 {
     public GameObject tray;
     public GameObject player;
-    private float headOffset = 4.3f;
+    public Vector3 headOffset;
+  
     Rigidbody rb;
    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        tray = gameObject;
     }
 
     // Update is called once per frame
@@ -25,9 +27,15 @@ public class CatchFood : MonoBehaviour
     {
         if (obj.gameObject.tag == ("Player"))
         {
+            player = obj.gameObject;
             Debug.Log(player);
+            PlayerMovement pm = player.GetComponent<PlayerMovement>();
+            if ( pm!= null)
+            {
+                pm.tray = tray;
+            }
             tray.transform.parent = (obj.gameObject.transform);
-            tray.transform.localPosition = player.transform.position + Vector3.up * headOffset;
+            tray.transform.position = player.transform.position + headOffset;
             rb.isKinematic = true;
             Debug.Log("Food caught");
         }
