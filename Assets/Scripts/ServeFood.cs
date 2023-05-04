@@ -6,7 +6,6 @@ public class ServeFood : MonoBehaviour
 {
     public GameObject tableTop;
     public GameObject trayInstance;
-    private float headOffset = 0f;
     
     void OnTriggerEnter(Collider obj)
     {
@@ -26,4 +25,5 @@ public class ServeFood : MonoBehaviour
             Debug.Log("Food served");
         }
     }
+
 }
