@@ -21,7 +21,7 @@ public class DestroyTrays : MonoBehaviour
     {
         if (obj.gameObject.tag == ("Tray1"))
         {
-           Debug.Log("destroyyyed");
+          // Debug.Log("destroyed");
            Destroy(obj.gameObject); 
         }
     }
