@@ -5,6 +5,8 @@ using UnityEngine;
 public class ServeFood : MonoBehaviour
 {
     public GameObject tableTop;
+    public GameObject tableTop2;
+
     public GameObject trayInstance;
     
     void OnTriggerEnter(Collider obj)
@@ -16,13 +18,19 @@ public class ServeFood : MonoBehaviour
             {
                 trayInstance = pm.tray;
             }
-            
-            // Attach the tray instance to the table top
-            trayInstance.transform.SetParent(tableTop.transform,true);
-            trayInstance.transform.position = tableTop.transform.position;
-            
 
-            Debug.Log("Food served");
+            if(tableTop.transform.childCount == 0){
+                // Attach the tray instance to the first tray position
+                trayInstance.transform.SetParent(tableTop.transform,true);
+                trayInstance.transform.position = tableTop.transform.position;
+                Debug.Log("Food served to first client");  
+            }else{
+                // Attach the tray instance to the second tray position
+                trayInstance.transform.SetParent(tableTop2.transform,true);
+                trayInstance.transform.position = tableTop2.transform.position;
+                Debug.Log("Food served to second client");
+            }
+            
         }
     }
 
