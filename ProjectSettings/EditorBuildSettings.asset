@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/PlayerGuide.unity
-    guid: 6243bfeb5950dc047a88145d8627ac51
+    guid: eeacca707d09f5044b88e336194e9f2b
   - enabled: 1
     path: Assets/Restaurant/Fast Food Restaurant Kit/Scene/Main.unity
     guid: b2a00bd399e468141a51057966f539b8
