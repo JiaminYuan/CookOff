@@ -8,17 +8,16 @@ public class NextLevelOne : MonoBehaviour
 {
     public Button button;
     public Text trayScore;
-    public GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         Button btn = button.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
-        trayScore.text = gameManager.foodServed.ToString();
+        trayScore.text = "Food Trays Served: " + GameManager.Instance.foodServed.ToString();
     }
 
     void TaskOnClick(){
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("MainLevelTwo");
     }
 }

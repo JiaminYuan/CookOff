@@ -5,40 +5,25 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject position1;
-    public GameObject position2;
-    public GameObject position3;
-    public GameObject position4;
-    public GameObject position5;
-    public GameObject position6;
+    // public GameObject position1;
+    // public GameObject position2;
+    // public GameObject position3;
+    // public GameObject position4;
+    // public GameObject position5;
+    // public GameObject position6;
     public int foodServed;
     public Text scoreText;
+    public static GameManager Instance { get; private set; }
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        CountFoodServed();
+        Instance = this;
     }
 
     public void CountFoodServed(){
-        int trayCount = 0;
-
-        trayCount += position1.transform.childCount;
-        trayCount += position2.transform.childCount;
-        trayCount += position3.transform.childCount;
-        trayCount += position4.transform.childCount;
-        trayCount += position5.transform.childCount;
-        trayCount += position6.transform.childCount;
-
-        foodServed += trayCount;
+        foodServed += 1;
         scoreText.text = "Served: " + foodServed.ToString();
     }
+
 
 }

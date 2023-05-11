@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CatchFood : MonoBehaviour
 {
     public GameObject tray;
     public GameObject player;
     public Vector3 headOffset;
+
+    private Text statusText;
   
     Rigidbody rb;
    
@@ -15,6 +19,7 @@ public class CatchFood : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         tray = gameObject;
+        statusText =  GameObject.FindGameObjectWithTag("Status").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -28,7 +33,6 @@ public class CatchFood : MonoBehaviour
         if (obj.gameObject.tag == ("Player"))
         {
             player = obj.gameObject;
-            Debug.Log(player);
             PlayerMovement pm = player.GetComponent<PlayerMovement>();
             if ( pm!= null)
             {
@@ -37,7 +41,7 @@ public class CatchFood : MonoBehaviour
             tray.transform.parent = (obj.gameObject.transform);
             tray.transform.position = player.transform.position + headOffset;
             rb.isKinematic = true;
-            Debug.Log("Food caught");
+            statusText.text = "Food caught";
         }
     }
 

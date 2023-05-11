@@ -16,6 +16,7 @@ public class Welcome : MonoBehaviour
     }
 
     void TaskOnClick(){
+        // reset score here
         SceneManager.LoadScene("Welcome");
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -320,7 +320,6 @@ GameObject:
   - component: {fileID: 284865861}
   - component: {fileID: 284865863}
   - component: {fileID: 284865862}
-  - component: {fileID: 284865864}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -389,19 +388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284865860}
   m_CullTransparentMesh: 1
---- !u!114 &284865864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284865860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6fcae4a7b47b2948bde97b49c3f996f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 1370997257}
 --- !u!1 &368637352
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +613,7 @@ GameObject:
   - component: {fileID: 791171021}
   - component: {fileID: 791171023}
   - component: {fileID: 791171022}
+  - component: {fileID: 791171024}
   m_Layer: 5
   m_Name: TrayScore
   m_TagString: Untagged
@@ -695,6 +682,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791171020}
   m_CullTransparentMesh: 1
+--- !u!114 &791171024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791171020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6fcae4a7b47b2948bde97b49c3f996f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1370997257}
+  trayScore: {fileID: 791171022}
 --- !u!1 &1139464364
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,7 +877,6 @@ GameObject:
   - component: {fileID: 1370997259}
   - component: {fileID: 1370997258}
   - component: {fileID: 1370997257}
-  - component: {fileID: 1370997260}
   m_Layer: 5
   m_Name: Next Level
   m_TagString: Untagged
@@ -986,19 +986,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370997255}
   m_CullTransparentMesh: 1
---- !u!114 &1370997260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370997255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6fcae4a7b47b2948bde97b49c3f996f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 1370997257}
 --- !u!1 &1995044536
 GameObject:
   m_ObjectHideFlags: 0

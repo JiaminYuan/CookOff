@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Restaurant/Fast Food Restaurant Kit/Scene/Main.unity
     guid: b2a00bd399e468141a51057966f539b8
   - enabled: 1
+    path: Assets/Scenes/MainLevelTwo.unity
+    guid: cca6122c781ecc64bbfd71d39fd9f7be
+  - enabled: 1
+    path: Assets/Scenes/MainLevelThree.unity
+    guid: 22b831fa7bfe48144bd2b00254e08d9a
+  - enabled: 1
     path: Assets/Scenes/LevelOneTransition.unity
     guid: abf44028752f5274da9b5e4cdb54eece
   - enabled: 1

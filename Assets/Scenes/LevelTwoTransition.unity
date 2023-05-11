@@ -402,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1370997257}
+  trayScore: {fileID: 0}
 --- !u!1 &368637352
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +564,7 @@ GameObject:
   - component: {fileID: 482957836}
   - component: {fileID: 482957835}
   m_Layer: 5
-  m_Name: LevelOne
+  m_Name: LevelTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -641,6 +642,7 @@ GameObject:
   - component: {fileID: 791171021}
   - component: {fileID: 791171023}
   - component: {fileID: 791171022}
+  - component: {fileID: 791171024}
   m_Layer: 5
   m_Name: TrayScore
   m_TagString: Untagged
@@ -709,6 +711,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791171020}
   m_CullTransparentMesh: 1
+--- !u!114 &791171024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791171020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25a1189b92fa87479e4cd5d5998a516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1370997257}
+  trayScore: {fileID: 791171022}
 --- !u!1 &1139464364
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +907,6 @@ GameObject:
   - component: {fileID: 1370997258}
   - component: {fileID: 1370997257}
   - component: {fileID: 1370997260}
-  - component: {fileID: 1370997261}
   m_Layer: 5
   m_Name: Next Level
   m_TagString: Untagged
@@ -1011,19 +1026,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45f203c5a6ee53643927752f95f9a85f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 1370997257}
---- !u!114 &1370997261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370997255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b25a1189b92fa87479e4cd5d5998a516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1370997257}

@@ -13,6 +13,7 @@ TagManager:
   - Tray3
   - Tray4
   - Head
+  - Status
   layers:
   - Default
   - TransparentFX
